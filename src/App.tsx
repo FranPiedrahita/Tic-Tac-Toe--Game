@@ -46,13 +46,15 @@ function App() {
   }
 
   return (
-    <main>
-      {GRID.map((i) => (
-        <button onClick={() => handleClick(i)} key={i}>
-          {getCellValue(i)}
-        </button>
-      ))}
-    </main>
+    <div className="center">
+      <main>
+        {GRID.map((i) => (
+          <button onClick={() => handleClick(i)} key={i}>
+            {getCellValue(i)}
+          </button>
+        ))}
+      </main>
+    </div>
   );
 }
 //sssssssss
